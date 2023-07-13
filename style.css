@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+    
+}
+
+
+.main {
+    display: grid;
+    padding: 1.5rem;
+}
+
+
+section {
+    background-color: white;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+label {
+    cursor: pointer;
+}
+
+.pricing_term {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 55px;
+    padding: 12px 24px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.pricing_term .standard {
+    background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.price p {
+    font-weight: bold;
+}
+
+.price-dolor span {
+    font-size: 65px;
+    font-weight: 600;
+    position: relative;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.price-dolor span::before {
+    position: absolute;
+    content: "$";
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    bottom: 40px;
+    right: 70px
+}
+
+.line {
+    position: relative;
+    width: 80%;
+    height: 1px;
+    left: 30px;
+    background-color: black;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 1rem;
+    
+}
+
+.description span {
+    color: #77A5F8;
+}
+
+.description p {
+    display: flex;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: linear-gradient(#D5A3FF 0%, #77A5F8 100%);
+    padding: 12px;
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+
+button:hover {
+    transform: scale(0.98);
+}
+
